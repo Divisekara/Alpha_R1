@@ -1,0 +1,15 @@
+Servo base;
+Servo upper;
+
+void arm_do(){
+  upper.write(0);
+  delay(500);
+  base.write(67);
+  delay(1000);
+  base.write(180);
+  delay(1000);
+  base.write(67);
+  delay(1000);
+  upper.write(50);
+  delay(1000);
+}
